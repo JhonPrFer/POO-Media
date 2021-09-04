@@ -14,15 +14,13 @@ public class Media {
 		this.nota3=nota3;
 	}
 	
-	public String Resultado() {
+	public void Resultado() {
 		
 		this.media=(nota1+nota2+nota3)/3;
-		
-		System.out.println(this.nome);
 		if(media>=5) 
-			return "Aprovado";
+			System.out.println(this.nome+" "+"Aprovado"); 
 		else
-			return "Reprovado";
+			System.out.println(this.nome+" "+"Reprovado");
 	}
 
 }
